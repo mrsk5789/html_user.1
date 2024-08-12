@@ -254,15 +254,7 @@
               <a
                 href="#review"
                 class="theme-btn theme-btn-sm bg-white text-black me-1"
-                ><i class="far fa-star me-1 font-size-13"></i> 리뷰쓰기</a
-              >
-              <a
-                href="#"
-                class="theme-btn theme-btn-sm bg-white text-black me-1"
-                data-bs-toggle="modal"
-                data-bs-target="#reportModal"
-                ><i class="far fa-flag me-1 font-size-13"></i> Report</a
-              >
+                ><i class="far fa-star me-1 font-size-13"></i> 리뷰쓰기</a>
             </div>
           <!-- </div> -->
         </div>
@@ -324,6 +316,14 @@
                       <li>
                         <i class="fal fa-check-circle me-1 text-success"></i>
                         공휴일 운영
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4">
+                    <ul class="list-items">
+                      <li>
+                        <i class="fal fa-check-circle me-1 text-success"></i>
+                        1:1 개인레슨
                       </li>
                     </ul>
                   </div>
@@ -389,58 +389,8 @@
               </div>
               <!-- end listing-single-panel -->
               <div class="listing-single-panel mb-5">
-                <!-- <h4 class="font-size-20 font-weight-semi-bold mb-4">
-                  Customer feedback
-                </h4> -->
                 <div class="rating-content row mb-4">
-                  <!-- <div class="col-lg-4 align-self-center"> -->
-                    <!-- <div
-                      class="rating-summary text-center border-right border-right-gray"
-                    > -->
-                      <!-- <span class="rating-total">4.5</span>
-                      <span class="rating-percent d-block my-2"
-                        >out of 5.0</span
-                      > -->
-                      <!-- <div
-                        class="star-rating d-inline-block"
-                        data-rating="4.5"
-                      ></div> -->
-                    <!-- </div> -->
-                  <!-- </div> -->
-                  <!-- <div class="col-lg-8"> -->
-                    <!-- <div class="mb-2 d-flex align-items-center">
-                      <span class="progress-bar-text text-uppercase me-2"
-                        >5 starts</span
-                      >
-                      <div class="progress flex-grow-1">
-                        <div
-                          class="progress-bar rate-progress-bar"
-                          role="progressbar"
-                          aria-valuenow="85"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div> -->
-                    <!-- <div class="mb-2 d-flex align-items-center">
-                      <span class="progress-bar-text text-uppercase me-2"
-                        >4 starts</span
-                      >
-                      <div class="progress flex-grow-1">
-                        <div
-                          class="progress-bar rate-progress-bar"
-                          role="progressbar"
-                          aria-valuenow="75"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div> -->
-                    <!-- <div class="mb-2 d-flex align-items-center">
-                    </div> -->
-                  <!-- </div> -->
-               </div > 
-               
+               </div >
                 <div class="reviews">
                   <h4 class="font-size-20 font-weight-semi-bold mb-4">
                     후기 <span class="badge badge-light">(5)</span>
@@ -551,7 +501,7 @@
                         >
                           <div class="pe-2">
                             <h4 class="comment-title">
-                              <a href="user-profile.html">Adam Smith</a>
+                              <a href="0_user-profile.html">Adam Smith</a>
                             </h4>
                             <span class="comment-meta">San Francisco, CA</span>
                           </div>
@@ -644,77 +594,6 @@
                 </div>
                 <!-- end reviews -->
               </div>
-              <!-- end listing-single-panel -->
-              <div class="listing-single-panel">
-                <h4 class="font-size-20 font-weight-semi-bold mb-1">
-                  리뷰쓰기
-                </h4>
-                <p class="font-size-15">
-                </p>
-                <hr class="border-top-gray my-4" />
-                <div class="add-review-wrap" id="review">
-                  <form class="leave-rating">
-                    <input type="radio" name="rating" id="rating-1" value="1" />
-                    <label for="rating-1" class="fas fa-star"></label>
-                    <input type="radio" name="rating" id="rating-2" value="2" />
-                    <label for="rating-2" class="fas fa-star"></label>
-                    <input type="radio" name="rating" id="rating-3" value="3" />
-                    <label for="rating-3" class="fas fa-star"></label>
-                    <input type="radio" name="rating" id="rating-4" value="4" />
-                    <label for="rating-4" class="fas fa-star"></label>
-                    <input type="radio" name="rating" id="rating-5" value="5" />
-                    <label for="rating-5" class="fas fa-star"></label>
-                  </form>
-                  <form method="post" class="row mt-4">
-                    <div class="col-lg-6 col-md-6">
-                      <label class="label-text">이름</label>
-                      <div class="form-group">
-                        <span class="fal fa-user form-icon"></span>
-                        <input
-                          class="form-control form--control"
-                          type="text"
-                          name="name"
-                          placeholder="이름"
-                        />
-                      </div>
-                    </div>
-                    <!-- end col-lg-6 -->
-                    <div class="col-lg-6 col-md-6">
-                      <label class="label-text">이메일</label>
-                      <div class="form-group">
-                        <span class="fal fa-envelope form-icon"></span>
-                        <input
-                          class="form-control form--control"
-                          type="email"
-                          name="email"
-                          placeholder="이메일을 작성하세요"
-                        />
-                      </div>
-                    </div>
-                    <!-- end col-lg-6 -->
-                    <div class="col-lg-12">
-                      <label class="label-text">리뷰</label>
-                      <div class="form-group">
-                        <textarea
-                          class="form-control form--control ps-3"
-                          rows="5"
-                          name="message"
-                          placeholder="Tell about your experience or leave a tip for others"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <!-- end col-lg-12 -->
-                    <div class="col-lg-12">
-                      <button class="theme-btn border-0" type="submit">
-                        작성
-                      </button>
-                    </div>
-                    <!-- end col-lg-12 -->
-                  </form>
-                </div>
-                <!-- end add-review-wrap -->
-              </div>
-              <!-- end listing-single-panel -->
             </div>
             <!-- end listing-wrapper -->
           </div>
@@ -1002,73 +881,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Modal -->
-    <div
-      class="modal fade modal-container"
-      id="reportModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="reportModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header align-items-center">
-            <h5 class="modal-title" id="reportModalTitle">Report Business</h5>
-            <button
-              type="button"
-              class="btn-close close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true" class="fal fa-times"></span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p class="font-size-15 pb-3">
-              Flagged content is reviewed by Dirto staff to determine whether it
-              violates Terms of Service or Community Guidelines. If you have a
-              question or technical issue, please contact our
-              <a href="contact.html" class="btn-link"
-                >Support team here <i class="fal fa-angle-right ms-1"></i
-              ></a>
-            </p>
-            <form method="post">
-              <div class="form-group select2-container-wrapper">
-                <label class="label-text">Issue type</label>
-                <select class="select-picker" data-width="100%" data-size="5">
-                  <option value="0">Select an issue</option>
-                  <option value="1">Inappropriate listing Content</option>
-                  <option value="2">Inappropriate Behavior</option>
-                  <option value="3">Dirto Policy Violation</option>
-                  <option value="4">Spammy Content</option>
-                  <option value="5">Rude behavior with customer</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="label-text">Issue details</label>
-                <textarea
-                  class="form-control form--control ps-3"
-                  rows="4"
-                  name="message"
-                  placeholder="Explain report issue as clear as possible"
-                ></textarea>
-              </div>
-              <button type="submit" class="theme-btn w-100">
-                Report Listing <i class="fal fa-long-arrow-right ms-2"></i>
-              </button>
-              <p class="font-size-13 pt-1 text-center">
-                <span class="text-warning">Warning:</span> You can be banned for
-                violent messages.
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Template JS Files -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

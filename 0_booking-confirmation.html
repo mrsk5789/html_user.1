@@ -33,16 +33,16 @@
         <div></div>
       </div>
     </div>
-    <!-- end per-loader -->
-    <header class="header-area border-bottom border-bottom-gray">
-      <div class="main-header py-3">
+    <!-- =============== -->
+    <header class="header-area header--area border-bottom border-bottom-gray">
+      <div class="main-header py-3 bg-white unfixed shadow-none">
         <div class="container">
           <div class="main-header-action-wrap">
             <div class="logo">
-              <a href="0_index.html"><img src="images/logo.png" alt="logo" /></a>
+              <a href="0_index.html"><img src="images/logo2.png" alt="logo" /></a>
             </div>
             <!-- end logo -->
-            <nav class="main-menu me-4 ms-auto">
+            <nav class="main-menu me-4 ms-auto main-menu-black">
               <ul>
                 <li>
                   <a href="#">Home <span class="fal fa-angle-down"></span></a>
@@ -70,8 +70,8 @@
                     <li><a href="list-with-map.html">list with map</a></li>
                     <li><a href="grid-with-map.html">grid with map</a></li>
                     <li><a href="listing-list.html">listing list </a></li>
-                    <li><a href="0_list-left-sidebar.html">left sidebar </a></li>
-                    <li><a href="0_listing-details.html">listing details</a></li>
+                    <li><a href="list-left-sidebar.html">left sidebar </a></li>
+                    <li><a href="listing-details.html">listing details</a></li>
                   </ul>
                 </li>
                 <li>
@@ -80,7 +80,7 @@
                     <li><a href="user-profile.html">user profile</a></li>
                     <li><a href="top-author.html">top authors </a></li>
                     <li><a href="dashboard.html">dashboard</a></li>
-                    <li><a href="0_booking.html">booking </a></li>
+                    <li><a href="booking.html">booking </a></li>
                     <li>
                       <a href="booking-confirmation.html"
                         >booking confirmation
@@ -110,12 +110,12 @@
               </ul>
             </nav>
             <div class="nav-right-content d-flex align-items-center">
-              <div class="author-access-list me-3">
+              <div class="author-access-list me-3 author-access-list-black">
                 <a href="login.html">Login</a>
                 <span class="or-text">or</span>
                 <a href="sign-up.html">Sign Up</a>
               </div>
-              <div class="side-menu-open ms-2">
+              <div class="side-menu-open ms-2 side-menu-open-black">
                 <i class="fal fa-bars"></i>
               </div>
               <!-- end side-menu-open -->
@@ -128,7 +128,9 @@
       </div>
       <!-- end main-header -->
       <div class="off-canvas">
-        <div class="off-canvas-close icon-element icon-element-sm bg-white shadow-sm">
+        <div
+          class="off-canvas-close icon-element icon-element-sm bg-white shadow-sm"
+        >
           <i class="fal fa-times"></i>
         </div>
         <!-- end off-canvas-close -->
@@ -162,8 +164,8 @@
               <li><a href="list-with-map.html">list with map</a></li>
               <li><a href="grid-with-map.html">grid with map</a></li>
               <li><a href="listing-list.html">Listing list </a></li>
-              <li><a href="list-left-sidebar.html">Left sidebar </a></li>
-              <li><a href="0_listing-details.html">Listing details</a></li>\
+              <li><a href="0_list-left-sidebar.html">Left sidebar </a></li>
+              <li><a href="0_listing-details.html">Listing details</a></li>
             </ul>
           </li>
           <li>
@@ -194,6 +196,7 @@
             <ul class="off-canvas-sub-menu">
               <li><a href="blog-full-width.html">full width</a></li>
               <li><a href="blog-grid.html">blog grid</a></li>
+              <li><a href="blog-left-sidebar.html">left sidebar </a></li>
               <li><a href="blog-right-sidebar.html">right sidebar </a></li>
               <li><a href="blog-single.html">blog detail</a></li>
             </ul>
@@ -206,243 +209,21 @@
       </div>
       <!-- end off-canvas -->
     </header>
-    <section class="breadcrumb-area bread-bg">
-    </section>
-    <!-- end breadcrumb-area -->
-    <section class="booking-area padding-top-60px padding-bottom-90px">
+    <section class="booking-area section-padding text-center">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">개인정보</h4>
-                <hr class="border-top-gray my-3" />
-                <div class="row">
-                  <div class="form-group col-lg-6 pr-lg-0">
-                    <label class="label-text">성</label>
-                    <input
-                      class="form-control form--control ps-3"
-                      type="text"
-                      name="text"
-                      placeholder="성"
-                    />
-                  </div>
-                  <!-- end form-group -->
-                  <div class="form-group col-lg-6">
-                    <label class="label-text">이름</label>
-                    <input
-                      class="form-control form--control ps-3"
-                      type="text"
-                      name="text"
-                      placeholder="이름"
-                    />
-                  </div>
-                  <!-- end form-group -->
-                  <div class="form-group col-lg-6 pr-lg-0">
-                    <label class="label-text">Email</label>
-                    <input
-                      class="form-control form--control ps-3"
-                      type="email"
-                      name="email"
-                      placeholder="you@example.com"
-                    />
-                  </div>
-                  <!-- end form-group -->
-                  <div class="form-group col-lg-6">
-                    <label class="label-text">번호</label>
-                    <input
-                      class="form-control form--control ps-3"
-                      type="text"
-                      name="text"
-                      placeholder="번호"
-                    />
-                  </div>
-                  <!-- end form-group -->
-                </div>
-                <!-- end row -->
-              </div>
-              <!-- end card-body -->
-            </div>
-            <!-- end card -->
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">결제방식</h4>
-                <hr class="border-top-gray mt-3 mb-4" />
-                <ul class="payment-method">
-                  <li class="active">
-                    <label class="payment-method-label">
-                      <input name="payment_method" type="radio" checked />
-                      계좌입금
-                    </label>
-                    <div class="expanded-payment-method">
-                      <p>
-                        저희 센터의 계좌로 입금을 해 주실때 회원님의 id를 반드시 입력해 주세요
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <label class="payment-method-label">
-                      <input name="payment_method" type="radio" />
-                      Credit / Debit Card
-                      <img
-                        src="images/payment-img.png"
-                        alt="Payment logos"
-                        class="position-absolute top-0 right-0 mt-3 img-fluid"
-                      />
-                    </label>
-                    <div class="expanded-payment-method">
-                      <div class="row">
-                        <div class="form-group col-lg-6 pr-lg-0">
-                          <label class="label-text">Name on Card</label>
-                          <input
-                            class="form-control form--control ps-3"
-                            type="text"
-                            name="text"
-                            placeholder="Name on Card"
-                          />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group col-lg-6">
-                          <label class="label-text">Card Number</label>
-                          <input
-                            class="form-control form--control ps-3"
-                            type="text"
-                            name="text"
-                            placeholder="1234 567 8923 4567"
-                          />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group col-lg-4 pr-lg-0">
-                          <label class="label-text">Expiry Month</label>
-                          <input
-                            class="form-control form--control ps-3"
-                            type="text"
-                            name="text"
-                            placeholder="MM"
-                          />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group col-lg-4 pr-lg-0">
-                          <label class="label-text">Expiry Year</label>
-                          <input
-                            class="form-control form--control ps-3"
-                            type="text"
-                            name="text"
-                            placeholder="YY"
-                          />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group col-lg-4">
-                          <label class="label-text">CVV</label>
-                          <input
-                            class="form-control form--control ps-3"
-                            type="text"
-                            name="text"
-                            placeholder="CVV"
-                          />
-                        </div>
-                        <!-- end form-group -->
-                      </div>
-                      <!-- end row -->
-                    </div>
-                  </li>
-                  <li>
-                    <label class="payment-method-label">
-                      <input name="payment_method" type="radio" />
-                      PayPal
-                      <img
-                        src="images/paypal.png"
-                        alt="PayPal logo"
-                        class="position-absolute top-0 right-0 mt-3 img-fluid"
-                      />
-                    </label>
-                    <div class="expanded-payment-method">
-                      <p>
-                        You will be redirected to PayPal to complete payment.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <!-- end card-body -->
-            </div>
-            <!-- end card -->
-            <a href="0_booking-confirmation.html" class="theme-btn"
-              >결제하기</a
+        <span class="fal fa-check-circle font-size-100 text-success"></span>
+        <h2 class="sec__title mt-4 mb-3">결제가 완료되었습니다!</h2>
+        <p class="sec__desc mb-4">
+          
+        </p>
+        <a href="invoice.html" class="theme-btn theme-btn-gray">결제내역 확인하기</a>
+        <a href="0_user-profile.html" class="theme-btn"
+              >수강내역 확인하기</a
             >
-          </div>
-          <!-- end col-lg-8 -->
-          <div class="col-lg-4">
-            <div class="card">
-              <a href="0_listing-details.html" class="card-image">
-                <img
-                  src="images/img-loading.jpg"
-                  data-src="images/img1.jpg"
-                  class="card-img-top lazy"
-                  alt="card image"
-                />
-              </a>
-              <div class="card-body">
-                <div class="d-flex align-items-center mb-1">
-                  <h4 class="card-title mb-0">
-                    <a href="0_listing-details.html">아이엘 필라테스</a>
-                  </h4>
-                  <i
-                    class="fa fa-check-circle ms-1 text-success"
-                    data-bs-toggle="tooltip"
-                    data-placement="top"
-                    title="Claimed"
-                  ></i>
-                </div>
-                <p class="card-text">Bishop Avenue, New York</p>
-              </div>
-              <!-- end card-body -->
-              <div
-                class="card-footer bg-transparent border-top-gray d-flex align-items-center justify-content-between"
-              >
-                <div class="star-rating" data-rating="5">
-                  <div class="rating-counter">5 reviews</div>
-                </div>
-                <a
-                  href="#"
-                  class="bookmark-btn icon-element icon-element-sm bg-white shadow-sm text-black"
-                  data-bs-toggle="tooltip"
-                  data-placement="top"
-                  title="Bookmark"
-                >
-                  <i class="fal fa-bookmark"></i>
-                </a>
-              </div>
-              <!-- end card-footer -->
-            </div>
-            <!-- end card -->
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title mb-3">수강하실 내역</h4>
-                <hr class="border-top-gray my-0" />
-                <ul class="list-items mt-3">
-                  <li class="d-flex align-items-center justify-content-between">
-                    <span class="text-black">Date</span> 10/20/2021
-                  </li>
-                  <li class="d-flex align-items-center justify-content-between">
-                    <span class="text-black">Hour</span> 5:30 PM
-                  </li>
-                  <li><hr class="border-top-gray" /></li>
-                  <li class="d-flex align-items-center justify-content-between">
-                    <span class="text-black">Total Cost</span>
-                    <span class="text-success">400,000</span>
-                  </li>
-                </ul>
-              </div>
-              <!-- end card-body -->
-            </div>
-          </div>
-          <!-- end col-lg-4 -->
-        </div>
       </div>
       <!-- end container -->
     </section>
-    <!-- end booking-area -->
+
     <section class="footer-area bg-gray padding-top-80px pattern-bg">
       <div class="container">
         <div class="row">
@@ -452,7 +233,8 @@
                 ><img src="images/logo2.png" alt="logo"
               /></a>
               <p class="mb-4">
-                Morbi convallis bibendum urna ut viverra.
+                Morbi convallis bibendum urna ut viverra. Maecenas quis
+                consequat libero, a feugiat eros
               </p>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -485,11 +267,11 @@
               <h4 class="footer__title mb-3">Categories</h4>
               <div class="stroke-shape mb-4"></div>
               <ul class="list-items list-items-underline">
-                <li><a href="#">필라테스</a></li>
-                <li><a href="#">요가</a></li>
-                <li><a href="#">헬스</a></li>
-                <li><a href="#">플라잉요가</a></li>
-                <li><a href="#">클라이밍</a></li>
+                <li><a href="#">Shops</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Events</a></li>
               </ul>
             </div>
             <!-- end footer-item -->
@@ -520,7 +302,9 @@
         </div>
         <!-- end row -->
         <hr class="border-top-gray" />
-        <div class="copy-right d-flex flex-wrap align-items-center justify-content-between pb-4">
+        <div
+          class="copy-right d-flex flex-wrap align-items-center justify-content-between pb-4"
+        >
           <p class="copy__desc py-2">
             &copy; Copyright Dirto <span id="copyright-year"></span>. Made with
             <span class="fas fa-heart bounce-anim"></span> by
@@ -532,9 +316,13 @@
       <!-- end container -->
     </section>
     <!-- end footer-area -->
+
+    <!-- start back-to-top -->
     <div id="back-to-top">
       <i class="fal fa-angle-up" title="Go top"></i>
     </div>
+    <!-- end back-to-top -->
+
     <!-- Template JS Files -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
