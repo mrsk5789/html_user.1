@@ -45,7 +45,7 @@
             <nav class="main-menu me-4 ms-auto">
               <ul>
                 <li>
-                  <a href="0_index.html">Home <span class="fal fa-angle-down"></span></a>
+                  <a href="0_index.html">Home</a>
                 </li>
                 <li>
                   <a href="#"
@@ -93,7 +93,6 @@
                   <ul class="dropdown-menu-item">
                     <li><a href="blog-full-width.html">full width</a></li>
                     <li><a href="blog-grid.html">blog grid</a></li>
-                    <li><a href="blog-left-sidebar.html">left sidebar </a></li>
                     <li>
                       <a href="blog-right-sidebar.html">right sidebar </a>
                     </li>
@@ -104,12 +103,9 @@
             </nav>
             <div class="nav-right-content d-flex align-items-center">
               <div class="author-access-list me-3">
-                <a href="login.html">Login</a>
+                <a href="0_login.html">Login</a>
                 <span class="or-text">&nbsp;&nbsp;</span>
-                <a href="sign-up.html">Sign Up</a>
-              </div>
-              <div class="side-menu-open ms-2">
-                <i class="fal fa-bars"></i>
+                <a href="0_sign-up.html">Sign Up</a>
               </div>
             </div>
           </div>
@@ -123,7 +119,7 @@
         <!-- end off-canvas-close -->
         <ul class="off-canvas-menu padding-top-60px">
           <li>
-            <a href="0_index.html">Home <span class="fal fa-angle-down sub-menu-toggler"></span></a>
+            <a href="0_index.html">Home</a>
           </li>
           <li>
             <a href="#"
@@ -180,8 +176,8 @@
           </li>
         </ul>
         <div class="mt-4 text-center">
-          <a href="login.html" class="theme-btn me-2">Login</a>
-          <a href="sign-up.html" class="theme-btn">Sign up</a>
+          <a href="0_login.html" class="theme-btn me-2">Login</a>
+          <a href="0_sign-up.html" class="theme-btn">Sign up</a>
         </div>
       </div>
       <!-- end off-canvas -->
@@ -263,7 +259,7 @@
                   <li>
                     <label class="payment-method-label">
                       <input name="payment_method" type="radio" />
-                      Credit / Debit Card
+                      신용카드/체크카드
                       <img
                         src="images/payment-img.png"
                         alt="Payment logos"
@@ -273,7 +269,7 @@
                     <div class="expanded-payment-method">
                       <div class="row">
                         <div class="form-group col-lg-6 pr-lg-0">
-                          <label class="label-text">Name on Card</label>
+                          <label class="label-text">카드이름</label>
                           <input
                             class="form-control form--control ps-3"
                             type="text"
@@ -283,7 +279,7 @@
                         </div>
                         <!-- end form-group -->
                         <div class="form-group col-lg-6">
-                          <label class="label-text">Card Number</label>
+                          <label class="label-text">카드번호</label>
                           <input
                             class="form-control form--control ps-3"
                             type="text"
@@ -293,7 +289,7 @@
                         </div>
                         <!-- end form-group -->
                         <div class="form-group col-lg-4 pr-lg-0">
-                          <label class="label-text">Expiry Month</label>
+                          <label class="label-text">Month</label>
                           <input
                             class="form-control form--control ps-3"
                             type="text"
@@ -303,7 +299,7 @@
                         </div>
                         <!-- end form-group -->
                         <div class="form-group col-lg-4 pr-lg-0">
-                          <label class="label-text">Expiry Year</label>
+                          <label class="label-text">Year</label>
                           <input
                             class="form-control form--control ps-3"
                             type="text"
@@ -324,6 +320,22 @@
                         <!-- end form-group -->
                       </div>
                       <!-- end row -->
+                    </div>
+                  </li>
+                  <li>
+                    <label class="payment-method-label">
+                      <input name="payment_method" type="radio" />
+                      카카오페이
+                      <img
+                        src="images/paypal.png"
+                        alt="PayPal logo"
+                        class="position-absolute top-0 right-0 mt-3 img-fluid"
+                      />
+                    </label>
+                    <div class="expanded-payment-method">
+                      <p>
+                        You will be redirected to PayPal to complete payment.
+                      </p>
                     </div>
                   </li>
                   <li>
@@ -507,10 +519,6 @@
       <!-- end container -->
     </section>
     <!-- end footer-area -->
-    <div id="back-to-top">
-      <i class="fal fa-angle-up" title="Go top"></i>
-    </div>
-    <!-- Template JS Files -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/select2.min.js"></script>
